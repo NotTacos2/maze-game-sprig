@@ -3,13 +3,14 @@ First time? Check out the tutorial game:
 https://sprig.hackclub.com/gallery/getting_started
 
 @title: Maze Game
-@description: 
-@author: 
+@description: just a maze game
+@author: NotTacos
 @tags: ['tag1', 'tag2']
 @addedOn: 2025-00-00
 */
 
 const player = "p"
+const wall = "w"
 
 setLegend(
   [ player, bitmap`
@@ -28,16 +29,36 @@ setLegend(
 ......000.......
 ......0.0.......
 .....00.00......
-................` ]
+................`],
+  [ wall, bitmap`
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000
+0000000000000000`]
 )
 
-setSolids([])
+setSolids([ player, wall ])
 
 let level = 0
 const levels = [
   map`
-p.
-..`
+p.www
+..w.w
+.....
+.w.w.
+.ww..`
 ]
 
 setMap(levels[level])
