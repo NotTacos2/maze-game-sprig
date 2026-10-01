@@ -2,8 +2,8 @@
 First time? Check out the tutorial game:
 https://sprig.hackclub.com/gallery/getting_started
 
-@title: Maze Game
-@description: just a maze game
+@title: Maze of Teleporters
+@description: just a maze game but with teleporters
 @author: NotTacos
 @tags: ['tag1', 'tag2']
 @addedOn: 2025-00-00
